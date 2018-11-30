@@ -12,9 +12,11 @@ class SimpleMiddleware:
 
         response = self.get_response(request)
         text = "Someone view your record with ID=5"
+        api_key = "bot679416085:AAGrJ1N5NoZiWJFl6H-LdbNSi-zwf4iqUbk"
+
         if request.path.startswith('/student/5'):
             requests.post(
-                f'https://api.telegram.org/bot679416085:AAGrJ1N5NoZiWJFl6H-LdbNSi-zwf4iqUbk/sendMessage?chat_id=697362059&text={text}')
+                f'https://api.telegram.org/{api_key}/sendMessage?chat_id=697362059&text={text}')
 
         # Code to be executed for each request/response after
         # the view is called.
