@@ -9,9 +9,6 @@ def update_notes(apps, schema_editor):
         student.notes = "Test notes for user migrations"
         student.save()
 
-
-
-
 class Migration(migrations.Migration):
 
     dependencies = [
