@@ -1,4 +1,4 @@
-# student_db_homework_3-4
+# students_db
 django, generic views: UpdateView, DeleteView, telegram bot
 
 
